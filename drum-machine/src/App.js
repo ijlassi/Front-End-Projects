@@ -98,7 +98,7 @@ class App extends React.Component {
   constructor(props){
 	super(props);
 	this.state = {
-		display :'Press a Key'
+		display :'Press a Key On The Keyboard'
 	  }
   }
 	handleDisplay = display => this.setState ({display})
