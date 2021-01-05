@@ -106,7 +106,7 @@ class App extends React.Component {
   render() {
   	return (
     	<div className="container" id = "drum-machine">
-      		<div classNAme ="container" id="display">{this.state.display}</div>
+      		<div className ="container" id="display">{this.state.display}</div>
 				<div id="drum-pads">
 				{data.map(i => (
 					<DrumPad
