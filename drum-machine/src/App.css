@@ -66,8 +66,6 @@ body {
 
 @media screen and (max-width: 1024px) {
     div {
-        display: block;
-        float: none;
         width: 100%;
     }
     #display {
