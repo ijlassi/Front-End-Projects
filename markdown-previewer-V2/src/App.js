@@ -42,7 +42,7 @@ const intialMarkdown = `
 
 ### Blockquote 
 
-  The future belongs to those who believe in the beauty of their dreams.
+>We accept the love we think we deserve.
 ### Code 
 \`\`\`
  function addTwoNumbers(a,b) {
