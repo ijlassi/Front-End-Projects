@@ -178,7 +178,7 @@ class QuoteBox extends React.Component {
             <a className="btn" id="tweet-quote" style={bgStyle} target="_blank" rel="noreferrer" href={'https://twitter.com/intent/tweet?hashtags=quotes&text=' + encodeURIComponent("\"" + this.state.quote.quote + this.state.quote.author)}><i className="fab fa-twitter"></i></a>  
             <a className= "btn" id= "tumblr-quote" style = {bgStyle} target="_blank" rel="noreferrer" href={'https://tumblr.com/intent/tumblrt?hashtags=quotes&text=' + encodeURIComponent("\"" + this.state.quote.quote + "\"" + this.state.quote.author)}><i className="fab fa-tumblr"></i></a> 
             <div id="nq-wrapper">
-              <button className="btn" id="new-quote" onClick={this.handleClick} style={bgStyle}>New quote</button>
+              <button className="btn" id="new-quote" onClick={this.handleClick} style={bgStyle}>New Quote</button>
             </div>
           </div>
         </div>
