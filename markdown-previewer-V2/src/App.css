@@ -25,9 +25,10 @@ body {
 span {
     display: block;
     unicode-bidi: embed;
-    Links {
-        line-height: 1.9;
-    }
+}
+
+Links {
+    line-height: 1.9;
 }
 
 pre {
