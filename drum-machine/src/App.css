@@ -31,23 +31,23 @@ body {
 }
 
 .drum-pad {
-    border: 1px solid black;
-    border-radius: 10px;
-    height: 20vh;
-    width: 20vh;
+    border: 0.11em solid black;
+    border-radius: 10em;
+    height: 7em;
+    width: 7em;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 4px;
+    padding: 0.2em;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
     -webkit-box-shadow: 0px 9px 0px rgba(0, 0, 0, .5), 0px 0px 0px rgba(0, 0, 0, .7);
     -moz-box-shadow: 0px 9px 0px rgba(0, 0, 0, .5), 0px 0px 0px rgba(0, 0, 0, .7);
     box-shadow: 0px 9px 0px rgba(0, 0, 0, .5), 0px 0px 0px rgba(0, 0, 0, .7);
-    margin: 100px auto;
-    width: 155px;
+    margin: 6em 0 1em;
+    width: 140px;
     text-align: center;
     -webkit-transition: all .1s ease;
     -moz-transition: all .1s ease;
@@ -75,5 +75,18 @@ body {
         text-align: center;
         font-size: 30px;
         top: 30%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    div {
+        display: block;
+        float: none;
+        width: 99.7%
+    }
+    #display {
+        text-align: center;
+        font-size: 30px;
+        top: 1%;
     }
 }
