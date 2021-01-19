@@ -1,18 +1,21 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
 * {
     overflow: hidden;
+    margin: 0;
 }
 
 #quotebox {
-    height: 100vh;
+    height: 260em;
+    width: 360em;
 }
 
 #quote-box {
-    border-radius: 10px;
+    border-radius: 1em;
     background-color: white;
     justify-content: center;
     align-items: center;
-    width: 550px;
-    padding: 40px 20px;
+    width: 35em;
+    padding: 4em 2em;
     display: block;
     margin: auto;
 }
@@ -25,22 +28,22 @@
 }
 
 #text {
-    margin: 1px;
+    margin: 0.01em;
     text-align: center;
-    font-size: 28px;
-    font-family: "Segoe UI", sans serif;
+    font-size: 2em;
+    font-family: "Open Sans", sans serif;
 }
 
 #author {
     text-align: right;
-    margin-right: 75px;
-    font-family: "Segoe UI", sans serif;
+    margin-right: 1.9em;
+    font-family: "Open Sans", sans serif;
 }
 
 .btn {
     display: flex;
-    height: 40px;
-    width: 40px;
+    height: 2.5em;
+    width: 2.5em;
 }
 
 .btn:hover {
@@ -51,14 +54,14 @@
 #tumblr-quote {
     float: left;
     color: white;
-    padding: 0px;
+    padding: 0em;
     text-align: center;
-    font-size: 20px;
-    margin-right: 5px;
+    font-size: 1.2em;
+    margin-right: 0.25em;
     justify-content: center;
     align-items: center;
-    font-family: "Segoe UI", sans serif;
-    border-radius: 10px;
+    font-family: "Open Sans", sans serif;
+    border-radius: 10em;
     transition-duration: 0.4s;
     cursor: pointer;
     -webkit-box-shadow: none;
@@ -72,25 +75,25 @@
 
 #tweet-quote:active {
     position: relative;
-    top: 2.5px;
+    top: 0.5em;
 }
 
 #tumblr-quote:active {
     position: relative;
-    top: 2.5px;
+    top: 0.5em;
 }
 
 #new-quote {
     float: right;
     color: white;
-    padding: 0px;
-    font-size: 20px;
-    height: 40px;
-    width: 150px;
+    padding: 0em;
+    font-size: 1.32em;
+    height: 2.5em;
+    width: 8em;
     justify-content: center;
     align-items: center;
-    font-family: "Segoe UI", sans serif;
-    border-radius: 10px;
+    font-family: "Open Sans", sans serif;
+    border-radius: 10em;
     transition-duration: 0.4s;
     cursor: pointer;
     outline: none;
@@ -105,16 +108,16 @@
 
 #new-quote:active {
     position: relative;
-    top: 2.5px;
+    top: 0.5em;
 }
 
 @media all and (max-width:1000px) {
     #text {
-        font-size: 20px;
+        font-size: 1.4em;
     }
     #quote-box {
-        height: 240px;
-        width: 450px;
+        width: 30em;
+        height: 13.2em;
         margin-left: 50%;
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
@@ -123,17 +126,17 @@
     #new-quote,
     #tweet-quote,
     #tumblr-quote {
-        font-size: 16px;
+        font-size: 1.2em;
     }
 }
 
 @media all and (max-width:800px) {
     #text {
-        font-size: 18px;
+        font-size: 1em;
     }
     #quote-box {
-        height: 225px;
-        width: 400px;
+        width: 26em;
+        height: 8em;
         margin-left: 50%;
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
@@ -142,17 +145,18 @@
     #new-quote,
     #tweet-quote,
     #tumblr-quote {
-        font-size: 12px;
+        font-size: 1em;
     }
 }
 
 @media all and (max-width:600px) {
     #text {
-        font-size: 14px;
+        font-size: 0.8em;
     }
     #quote-box {
-        height: 215px;
-        width: 300px;
+        width: 22em;
+        display: block;
+        height: 7em;
         margin-left: 50%;
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
@@ -161,6 +165,6 @@
     #new-quote,
     #tweet-quote,
     #tumblr-quote {
-        font-size: 10px;
+        font-size: 0.8em;
     }
 }
