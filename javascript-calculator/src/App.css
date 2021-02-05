@@ -1,3 +1,273 @@
-.App {
+.calculator {
+    background-color: rgb(172, 66, 124);
+    width: 31.3vw;
+    height: 75.2vh;
+    max-width: 100%;
+    min-width: 32%;
+    border-radius: 14px;
+    padding: 1px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3), 10px 0px 30px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+main {
+    width: 100%;
+    padding: 0
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 2.5em;
     text-align: center;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: block;
+}
+
+button {
+    -webkit-box-shadow: 0px 9px 0px rgba(0, 0, 0, .5), 0px 0px 0px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0px 9px 0px rgba(0, 0, 0, .5), 0px 0px 0px rgba(0, 0, 0, .7);
+    box-shadow: 0px 4px 0px rgba(8, 7, 7, 0.5), 0px 0px 0px rgba(0, 0, 0, .7);
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+    background-color: rgb(3, 17, 1);
+}
+
+button:hover {
+    background-color: rgb(57, 216, 25);
+}
+
+#divide,
+#subtract,
+#add,
+#multiply,
+#equal {
+    background-color: rgb(3, 17, 1);
+    color: rgb(29, 247, 9);
+    font-size: 20em;
+    padding: 0.5em;
+    font-weight: bold;
+    outline: none;
+}
+
+#equal:hover {
+    background-color: rgb(57, 216, 25);
+    color: rgb(3, 17, 1);
+}
+
+#divide:hover {
+    background-color: rgb(57, 216, 25);
+    color: rgb(3, 17, 1);
+}
+
+#add:hover {
+    background-color: rgb(57, 216, 25);
+    color: rgb(3, 17, 1);
+}
+
+#multiply:hover {
+    background-color: rgb(57, 216, 25);
+    color: rgb(3, 17, 1);
+}
+
+#subtract:hover {
+    background-color: rgb(57, 216, 25);
+    color: rgb(3, 17, 1);
+}
+
+button:active {
+    box-shadow: 1px 0px 1px rgb(57, 216, 25), 0px 1px 1px rgb(57, 216, 25);
+}
+
+#seven,
+#eight,
+#nine,
+#divide {
+    height: 7.6vh;
+    width: 5.15vw;
+    border-color: black;
+    font-size: 1em;
+    font-family: "Segoe UI", Arial, sans-serif;
+    border-radius: 3em;
+    margin-left: 50px;
+    margin-right: -30.2px;
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+#six,
+#five,
+#four,
+#multiply {
+    height: 7.6vh;
+    width: 5.15vw;
+    border-color: black;
+    font-size: 1em;
+    font-family: "Segoe UI", Arial, sans-serif;
+    border-radius: 3em;
+    margin-left: 50px;
+    margin-right: -30.2px;
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+#three,
+#two,
+#one,
+#subtract {
+    height: 7.6vh;
+    width: 5.15vw;
+    border-color: black;
+    font-size: 1em;
+    font-family: "Segoe UI", Arial, sans-serif;
+    border-radius: 3em;
+    margin-left: 50px;
+    margin-right: -30.2px;
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+#zero,
+#decimal,
+#equal,
+#add {
+    height: 7.6vh;
+    width: 5.15vw;
+    border-color: black;
+    font-size: 1em;
+    font-family: "Segoe UI", Arial, sans-serif;
+    border-radius: 3em;
+    margin-left: 50px;
+    margin-right: -30.2px;
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+#clear {
+    outline: none;
+    color: red;
+    height: 6.8vh;
+    width: 24.9vw;
+    border-radius: 1.5em;
+    border-color: black;
+    margin-left: 3.7em;
+    margin-top: 1.8em;
+    font-weight: bold;
+    font-family: "Segoe UI", Arial, sans-serif;
+    align-items: center;
+}
+
+#display {
+    width: 24vw;
+    height: 8.2vh;
+    color: white;
+    display: flex;
+    margin-left: 3em;
+    margin-top: 2.2em;
+    border-radius: 0.5em;
+    padding: 0.4em;
+    background-color: #242424;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#display:hover {
+    background-image: linear-gradient(to top, rgb(74, 190, 28), rgb(9, 250, 49));
+    transform: scale(1.2);
+}
+
+#nine,
+#eight,
+#seven,
+#six,
+#five,
+#four,
+#three,
+#two,
+#one,
+#zero,
+#decimal {
+    color: white;
+    font-weight: bold;
+    outline: none
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        margin-left: 5em;
+        margin-right: 5em;
+        margin-top: 2.5em;
+        padding: 0;
+        font-size: 1.5em;
+    }
+    main {
+        margin-left: 0.2em;
+        margin-right: 5em;
+        margin-top: 1.5em;
+        padding: 0
+    }
+    .calculator {
+        width: 38vw;
+        height: 60vh;
+        max-width: 100%;
+        min-width: 45%;
+        min-height: 50%;
+        max-height: 100%;
+        margin: 0 auto;
+        margin-right: auto;
+    }
+    #nine,
+    #eight,
+    #seven,
+    #six,
+    #five,
+    #four,
+    #three,
+    #two,
+    #one,
+    #zero,
+    #decimal,
+    #divide,
+    #subtract,
+    #add,
+    #multiply,
+    #equal {
+        height: 5.8vh;
+        width: 6.8vw;
+        min-width: 0%;
+        min-height: 100%;
+        font-size: 0.7em;
+        margin-left: 3.5em;
+        margin-top: 1.3em;
+        align-items: center;
+        justify-content: center;
+    }
+    #clear {
+        height: 5vh;
+        width: 30vw;
+        min-width: 0%;
+        margin-left: 3em;
+        margin-top: 1.2em;
+        border-radius: 0.4em;
+    }
+    #display {
+        width: 29vw;
+        height: 4.6vh;
+        margin-top: 2em;
+        margin-left: 2.4em;
+        align-items: center;
+        min-width: 50%;
+    }
 }
