@@ -1,0 +1,286 @@
+    body {
+        background: #002b36;
+        display: flex;
+    }
+    
+    .container {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1 {
+        color: white;
+        text-align: center;
+    }
+    
+    .timer {
+        color: #002b36;
+        font-family: 'ArialRounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-size: 8em;
+        font-weight: bold;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .pomodoro {
+        height: 9em;
+        width: 21em;
+        display: inline-flex;
+        background: #7fb307;
+        position: relative;
+        border-radius: 1em;
+        border: solid #0a5163;
+    }
+    
+    #session-increment {
+        margin-left: -3.9em;
+        margin-top: 4em;
+        position: fixed;
+        height: 40px;
+        width: 40px;
+        border-radius: 5em;
+        border: solid #0a5163;
+        color: #002b36;
+        background-color: #7fb307;
+        font-weight: bold;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+        -webkit-transition: all .1s ease;
+        -moz-transition: all .1s ease;
+        -ms-transition: all .1s ease;
+        -o-transition: all .1s ease;
+        transition: all .1s ease;
+    }
+    
+    #session-increment:active {
+        position: absolute;
+        top: 0.5em
+    }
+    
+    #session-increment:hover {
+        color: #7fb307;
+        background-color: #002b36;
+    }
+    
+    #session-decrement {
+        margin-left: 0.8em;
+        margin-top: 4.3em;
+        position: fixed;
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+        border-radius: 5em;
+        border: solid #0a5163;
+        color: #002b36;
+        background-color: #7fb307;
+        font-weight: bold;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+        -webkit-transition: all .1s ease;
+        -moz-transition: all .1s ease;
+        -ms-transition: all .1s ease;
+        -o-transition: all .1s ease;
+        transition: all .1s ease;
+    }
+    
+    #session-decrement:active {
+        position: absolute;
+        top: 0.5em
+    }
+    
+    #session-decrement:hover {
+        color: #7fb307;
+        background-color: #002b36;
+    }
+    
+    .start-pause-reset {
+        margin-left: -24em;
+        margin-top: 6em;
+        padding: 0;
+        justify-content: center;
+        position: fixed;
+    }
+    
+    #start {
+        margin-left: 29em;
+        margin-top: -6.5em;
+        position: fixed;
+        width: 8em;
+        height: 3.5em;
+        border-radius: 1em;
+        font-weight: bold;
+        color: #002b36;
+        background-color: #7fb307;
+        border: solid #0a5163;
+        font-size: 0.833em;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+        -webkit-transition: all .1s ease;
+        -moz-transition: all .1s ease;
+        -ms-transition: all .1s ease;
+        -o-transition: all .1s ease;
+        transition: all .1s ease;
+    }
+    
+    #start:active {
+        position: absolute;
+        top: 0.5em
+    }
+    
+    #start:hover {
+        color: #7fb307;
+        background-color: #002b36;
+    }
+    
+    #pause {
+        margin-left: 37.3em;
+        margin-top: -6.5em;
+        position: fixed;
+        width: 8em;
+        height: 3.5em;
+        border-radius: 1em;
+        font-weight: bold;
+        color: #002b36;
+        background-color: #7fb307;
+        border: solid #0a5163;
+        font-size: 0.833em;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+        -webkit-transition: all .1s ease;
+        -moz-transition: all .1s ease;
+        -ms-transition: all .1s ease;
+        -o-transition: all .1s ease;
+        transition: all .1s ease;
+    }
+    
+    #pause:active {
+        position: absolute;
+        top: 0.5em
+    }
+    
+    #pause:hover {
+        color: #7fb307;
+        background-color: #002b36;
+    }
+    
+    #reset {
+        margin-left: 45.5em;
+        margin-top: -6.5em;
+        position: fixed;
+        width: 8.5em;
+        height: 3.5em;
+        border-radius: 15px;
+        color: #002b36;
+        background-color: #7fb307;
+        border: solid #0a5163;
+        font-weight: bold;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+        -webkit-transition: all .1s ease;
+        -moz-transition: all .1s ease;
+        -ms-transition: all .1s ease;
+        -o-transition: all .1s ease;
+        transition: all .1s ease;
+    }
+    
+    #reset:active {
+        position: absolute;
+        top: 0.5em
+    }
+    
+    #reset:hover {
+        color: #7fb307;
+        background-color: #002b36;
+    }
+    
+    .break-label {
+        justify-content: center;
+        position: fixed;
+        background-color: #7fb307;
+        margin-left: 4.5em;
+        margin-top: 4em;
+        border-radius: 1em;
+        border: solid #0a5163;
+    }
+    
+    #break-increment {
+        margin-left: -2.6em;
+        margin-top: 2.3em;
+        position: fixed;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: solid #0a5163;
+        color: #002b36;
+        background-color: #7fb307;
+        font-weight: bold;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+        -webkit-transition: all .1s ease;
+        -moz-transition: all .1s ease;
+        -ms-transition: all .1s ease;
+        -o-transition: all .1s ease;
+        transition: all .1s ease;
+    }
+    
+    #break-increment:active {
+        position: absolute;
+        top: 0.5em
+    }
+    
+    #break-increment:hover {
+        color: #7fb307;
+        background-color: #002b36;
+    }
+    
+    #break-decrement {
+        margin-left: 0.3em;
+        margin-top: 1.8em;
+        position: fixed;
+        height: 30px;
+        width: 30px;
+        font-size: 1em;
+        border-radius: 5em;
+        border: solid #0a5163;
+        color: #002b36;
+        background-color: #7fb307;
+        font-weight: bold;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+        -webkit-transition: all .1s ease;
+        -moz-transition: all .1s ease;
+        -ms-transition: all .1s ease;
+        -o-transition: all .1s ease;
+        transition: all .1s ease;
+    }
+    
+    #break-decrement:active {
+        position: absolute;
+        top: 0.5em
+    }
+    
+    #break-decrement:hover {
+        color: #7fb307;
+        background-color: #002b36;
+    }
+    
+    .break-text {
+        color: #002b36;
+        font-family: 'ArialRounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-size: 4.5em;
+        font-weight: bold;
+        -webkit-tap-highlight-color: transparent;
+        display: inline-block;
+        text-align: center;
+    }
